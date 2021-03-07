@@ -26,7 +26,35 @@ Zombie processes can be killed by sending the SIGCHLD signal to the parent, usin
 This signal informs the parent process to clean up the zombie process using the wait() system call. This signal is sent with the kill command. 
 kill -s SIGCHLD pid
 
-Process Management:
+# Orphan Processes
+Orphan processes are those processes that are still running even though their parent process has terminated or finished. 
+-- A process can be orphaned intentionally or unintentionally.
+- An intentionally orphaned process runs in the background without any manual support. 
+This is usually done to start an indefinitely running service or to complete a long-running job without user attention.
+- An unintentionally orphaned process is created when its parent process crashes or terminates. 
+Unintentional orphan processes can be avoided using the process group mechanism.
+
+# Daemon Process
+- A daemon process is a background process that is not under the direct control of the user. 
+This process is usually started when the system is bootstrapped and it terminated with the system shut down.
+- Usually the parent process of the daemon process is the init process. 
+This is because the init process usually adopts the daemon process after the parent process forks the daemon process and terminates.
+
+--The daemon process names normally end with a d. Some of the examples of daemon processes in Unix are −
+
+crond
+This is a job scheduler that runs jobs in the background.
+
+syslogd
+This is the system logger that implements the system logging facility and collects system messages.
+
+httpd
+This is the web server daemon process that handles the Hypertext Transfer Protocol.
+
+dhcpd
+This daemon configures the TCP/IP information for users dynamically.
+
+# Process Management:
 
 Processes are started in user space
 
@@ -45,6 +73,8 @@ Exec(): it replaces the current process with new program. Here as no new process
 vfork(): it is similar to fork, however in vfork() parent is temp suspended until child process completes which doesn’t happen in fork
 system(): It uses fork() command’s variation. To create child process
 clone(): they are like fork but they allow child to share execution context with parent who calls it. 
+wait() system call suspends execution of the current process until one of its children terminates.
+waitpid() system call suspends execution of the current process until a child specified by pid argument has changed state.
 Like memory space, table of Giles descriptions and table of signal handlers. vfork() is faster the fork()
 Kernel stores all the process in a doubly linked list which stores all the data about process. Each element is called process descriptor in this list
 
