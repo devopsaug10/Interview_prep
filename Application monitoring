@@ -8,7 +8,7 @@ Application request Count by status code
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status  
 
 200 OK
-The request has succeeded. The meaning of the success depends on the HTTP method:
+The request has succeeded and processing of our request is done. The response is the final payload and the service will not take further actions. 
 
 202 Accepted
 202 response status code indicates that the request has been accepted for processing, 
