@@ -72,3 +72,16 @@ Note that together with this response, a user-friendly page explaining the probl
 This responses should be used for temporary conditions and the Retry-After: HTTP header should, if possible, contain the estimated time before the recovery of the service. 
 The webmaster must also take care about the caching-related headers that are sent along with this response, as these temporary condition responses should usually not be cached.
 
+
+# Latency measures the delay between an action and a response. Over the Internet, individual delays at the application 
+or packet level can accumulate, as each element in the chain of communication is linked to others.
+
+
+Key Kafka metrics to monitor From our perspective, we have found the following topics to be most helpful in monitoring Kafka:
+- Messages in/out
+- Network handler idle time
+- Request handler idle time
+- Under-Replicated partitions
+- Leader Elections
+- CPU idle time
+- Host Network in/out
