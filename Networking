@@ -30,3 +30,10 @@ client doesn’t know who the servers are and reverse proxy forwards it based on
 A reverse proxy accepts a request from a client, forwards it to a server that can fulfill it, and returns the server’s response to the client.
 A load balancer distributes incoming client requests among a group of servers, in each case returning the response 
 from the selected server to the appropriate client.
+
+The Dynamic Host Configuration Protocol (DHCP) is a network management protocol used on Internet Protocol (IP) networks, 
+whereby a DHCP server dynamically assigns an IP address and other network configuration parameters to each device on the network, 
+so they can communicate with other IP networks.
+A DHCP server is used for:
+1. Requesting IP addresses and networking parameters automatically from the Internet service provider (ISP)
+2. Reducing the need for a network administrator or a user to manually assign IP addresses to all network devices.
