@@ -1,0 +1,32 @@
+Network congestion in data networking and queueing theory is the reduced quality of service that occurs when a network node or 
+link is carrying more data than it can handle. 
+Typical effects include queueing delay, packet loss or the blocking of new connections.
+How to fix network congestion?
+Monitor the traffic on your network and check for any bottlenecks or heavy usage patterns.
+Segment your network into multiple subnets that you can resize according to usage.
+Optimize the TCP/IP settings to balance the packet send/request speed.
+Congestion control mechanisms are divided into two categories, one category prevents the congestion from happening and 
+the other category removes congestion after it has taken place.
+These two categories are: 1. Open Loop Congestion Control. 2. Closed Loop Congestion Control.
+
+Network address translation (NAT) is a method of remapping an IP address space into another by modifying network address information 
+in the IP header of packets while they are in transit across a traffic routing device.[1] The technique was originally used to avoid 
+the need to assign a new address to every host when a network was moved, or when the upstream Internet service provider was replaced, 
+but could not route the networks address space. It has become a popular and essential tool in conserving global address space in the 
+face of IPv4 address exhaustion. One Internet-routable IP address of a NAT gateway can be used for an entire private network.
+
+IP masquerading is a technique that hides an entire IP address space, usually consisting of private IP addresses, 
+behind a single IP address in another, usually public address space. The hidden addresses are changed into a single (public) IP address 
+as the source address of the outgoing IP packets so they appear as originating not from the hidden host but from the routing device itself. 
+Because of the popularity of this technique to conserve IPv4 address space, the term NAT has become virtually synonymous with IP masquerading.
+
+The Host Identity Protocol (HIP) is a host identification technology for use on Internet Protocol (IP) networks, such as the Internet. 
+The Internet has two main name spaces, IP addresses and the Domain Name System. HIP separates the end-point identifier and locator roles of 
+IP addresses. It introduces a Host Identity (HI) name space, based on a public key security infrastructure.
+The Host Identity Protocol provides secure methods for IP multihoming and mobile computing.
+
+Servers behind the proxy do not know about the client is, they just serve the response based on what proxy send them whereas in reverse proxy, 
+client doesn’t know who the servers are and reverse proxy forwards it based on the setup. Load balancing is an example of reverse proxy.
+A reverse proxy accepts a request from a client, forwards it to a server that can fulfill it, and returns the server’s response to the client.
+A load balancer distributes incoming client requests among a group of servers, in each case returning the response 
+from the selected server to the appropriate client.
