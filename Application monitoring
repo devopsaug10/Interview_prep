@@ -23,6 +23,9 @@ The user-agent may update its cached headers for this resource with the new ones
 This response code means that the URI of requested resource has been changed temporarily. 
 Further changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.
 
+URI stands for Uniform Resource Identifier, and it's the official name for those things you see all the time on the Web that begin 
+' http: ' or ' mailto: ', for example http://www.w3.org/ , which is the URI for the home page of the World Wide Web consortium.
+
 304 Not Modified
 This is used for caching purposes. It tells the client that the response has not been modified, 
 so the client can continue to use the same cached version of the response.
@@ -69,8 +72,10 @@ This error response means that the server, while working as a gateway to get a r
 503 Service Unavailable
 The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. 
 Note that together with this response, a user-friendly page explaining the problem should be sent. 
-This responses should be used for temporary conditions and the Retry-After: HTTP header should, if possible, contain the estimated time before the recovery of the service. 
-The webmaster must also take care about the caching-related headers that are sent along with this response, as these temporary condition responses should usually not be cached.
+This responses should be used for temporary conditions and the Retry-After: HTTP header should, if possible, 
+contain the estimated time before the recovery of the service. 
+The webmaster must also take care about the caching-related headers that are sent along with this response, 
+as these temporary condition responses should usually not be cached.
 
 
 # Latency measures the delay between an action and a response. Over the Internet, individual delays at the application 
