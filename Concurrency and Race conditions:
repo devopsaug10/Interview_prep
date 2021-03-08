@@ -11,3 +11,19 @@ Concurrency and Race conditions:
 - Mutex can only be 0 or 1 whereas semaphore can have other values as well Other resources available:
 - Completions: Allows one thread to tell another thread that task is done
 - Spinlocks: Just like semaphores but they are used for code which. Can not sleep for example interrupt handlers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
