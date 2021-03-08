@@ -34,4 +34,16 @@ and performing the inverse function for any replies. Any router situated between
 - SNAT allows multiple hosts on the “inside” to get to any host on the “outside”. 
   DNAT allows multiple hosts on the “outside” to get to any host on the “inside”
   
+# Inode is a data structure in Unix that contains metadata about a file. Some of the items contained in an inode are:
+1) mode
+2) owner (UID, GID)
+3) size
+4) atime, ctime, mtime  
+
+# Linux Kill commands are:
+Killall: Killall command is used to kill all the processes with a particular name.
+Pkill: This command is a lot like killall, except it kills processes with partial names.
+Xkill: xkill allows users to kill command by clicking on the window
+
+
   
