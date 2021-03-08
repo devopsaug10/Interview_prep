@@ -20,3 +20,18 @@ free which tells you free memory available, si and so which tells swap in and sw
 -> sar: displays the contents of selected cumulative activity counters in the operating system. 
 Information is reported on the paging system, i/o, CPUs, network interfaces, swap space, file system, and others.   
 -> top rolling summary of all the commands which came up virtual memory, swap memory, load avg, cpu usage, process detail
+
+# Source Network Address Translation (source-nat or SNAT) is a technique that allows traffic from a private network to go out to the internet. 
+#Destination network address translation (DNAT) is a technique for transparently changing the destination IP address of an end route packet 
+and performing the inverse function for any replies. Any router situated between two endpoints can perform this transformation of the packet.
+
+#Difference:
+- On either side of a NAT device, we have an outside world and inside the world, When the inside world communicates with the outside world SNAT happens. 
+  When the outside world communicates with the inside world DNAT happens.
+- When many internal private IP addresses get translated to one public IP address, it’s called Static SNAT. 
+  When many internal private IP addresses get translated to many public IP addresses it’s called Dynamic SNAT
+- Source NAT changes the source address in the IP header packet. Source NAT changes the destination address in the IP header packet.
+- SNAT allows multiple hosts on the “inside” to get to any host on the “outside”. 
+  DNAT allows multiple hosts on the “outside” to get to any host on the “inside”
+  
+  
