@@ -10,3 +10,21 @@ Memory Management:
 and book keep the information so that they can be brought back into memory when needed.
 - Use processor MMUs for isolation and privileges. These MMU components (TLBs and caches) act as a cache of page tables.
 - Use optimized algorithms and data structures.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
