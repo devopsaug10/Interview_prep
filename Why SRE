@@ -1,0 +1,27 @@
+How does SRE work:
+
+They automate everything to solve other tasks
+They are first responders to maintain SLOs and SLAs that has been promised by the application
+Main tasks of SRE:
+Fix bugs
+Build and deploy software
+Test software
+Administer production deployment
+Manage tooling and provisioning
+Mitigate against disasters
+Learn and share skills
+Analyze past incidents
+
+# Why I want to be SRE:
+
+I love working with large, chaotic systems
+I love solving problems which I have never seen before
+I love automating and making mundane tasks easy for teams
+I am good at collaborating and communicating with engineers to figure out their problems (and hidden ones) and coming up with solutions
+
+# Observability is basically a conversation around the measurement and instrument of an organization.
+To improve an organization’s observability, you need to:
+- Understand what types of data flow from an environment, and which of those data types are relevant and useful to your observability goals
+- Get a clear vision of what a team cares about and figure out how your strategy is making sense of data by distilling, curating, 
+transforming it into actionable insights into the performance of your systems.
+
