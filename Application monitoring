@@ -81,6 +81,19 @@ as these temporary condition responses should usually not be cached.
 # Latency measures the delay between an action and a response. Over the Internet, individual delays at the application 
 or packet level can accumulate, as each element in the chain of communication is linked to others.
 
+For your API to be considered real time, the latency at the intersection needs to be less than 30ms
+
+Kafka deployment and the workload it handles:
+- Dozens of billions messages/day (per cluster)
+- Dozens of brokers (per cluster)
+- Thousands of partitions (primary)
+- Multiple production clusters per region
+- Multi-region
+- No cross-region replication
+
+ Filebeat to transfer logs
+The most important log file is the server.log file, where the errors and information about 
+partitions, leadership, and other interesting information can be found.
 
 Key Kafka metrics to monitor From our perspective, we have found the following topics to be most helpful in monitoring Kafka:
 - Messages in/out
@@ -90,3 +103,4 @@ Key Kafka metrics to monitor From our perspective, we have found the following t
 - Leader Elections
 - CPU idle time
 - Host Network in/out
+
